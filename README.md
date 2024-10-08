@@ -1,39 +1,51 @@
-Mall Customers Segmentation
-Project Overview
-This Jupyter notebook performs customer segmentation analysis based on the demographic and spending data of mall customers. It uses K-Means clustering to identify different segments of customers and visualize the results. The main objective is to understand the patterns in customer behavior and group customers based on their similarity for potential business insights.
+# Mall Customers Segmentation
 
-Key Features
-Data Preparation: The notebook reads customer data and processes it for analysis.
-Clustering with K-Means: Utilizes the K-Means clustering algorithm to group customers into distinct segments.
-Silhouette Analysis: Evaluates the quality of clusters using silhouette scores.
-3D Visualization: Employs 3D scatter plots for enhanced visualization of clusters using plotly.
-Seaborn and Matplotlib Visualizations: Provides various 2D plots for understanding the data distribution and cluster formations.
-Libraries Used
-The notebook utilizes the following Python libraries:
+This repository contains a Jupyter notebook that performs customer segmentation using K-Means clustering on mall customer data. The project analyzes demographic and spending patterns, with visualization using 2D and 3D plots for better insights into customer behavior.
 
-pandas: For data manipulation and handling.
-matplotlib: For basic data visualization.
-seaborn: For enhanced and aesthetically pleasing plots.
-sklearn: For implementing the K-Means clustering algorithm and evaluating its performance.
-plotly: For interactive 3D visualizations of the customer segments.
-Usage
-To run the notebook:
+## Project Overview
 
-Ensure you have Python installed with the required libraries.
-You can install the necessary libraries via pip:
-bash
-Kopiera kod
-pip install pandas matplotlib seaborn scikit-learn plotly
-Open the notebook in Jupyter and run the cells to execute the analysis.
-Data
-The dataset used in this notebook contains mall customers' demographic and spending data. The dataset includes features such as:
+The goal of this project is to group mall customers into distinct segments based on their similarity using the K-Means clustering algorithm. These segments provide insights into customer behavior, which can be used for targeted marketing strategies.
 
-Age: Customer's age.
-Annual Income: Annual income of the customer in thousand dollars.
-Spending Score: A score assigned by the mall based on customer spending behavior.
-Clustering Process
-Data Exploration: The notebook begins by loading and exploring the dataset to understand its structure.
-Feature Selection: Relevant features such as Age, Income, and Spending Score are selected for clustering.
-K-Means Clustering: The K-Means algorithm is applied with varying cluster numbers to determine the optimal segmentation.
-Cluster Evaluation: The silhouette score is computed to assess the quality of the clustering.
-Visualization: The final clusters are visualized using 2D and 3D scatter plots for easy interpretation.
+## Key Features
+
+- **Data Loading and Exploration**: Reading and understanding the structure of customer data.
+- **Clustering with K-Means**: Grouping customers into clusters based on demographic and spending features.
+- **Cluster Evaluation**: Using silhouette scores to assess the quality of clustering.
+- **Visualization**: Displaying 2D and 3D scatter plots of the clusters for intuitive analysis.
+
+## Libraries Used
+
+The following Python libraries are used in the notebook:
+
+- `pandas`: Data manipulation and analysis.
+- `matplotlib`: Basic data visualization.
+- `seaborn`: Enhanced and aesthetically pleasing statistical plots.
+- `sklearn`: K-Means clustering algorithm and silhouette score for cluster evaluation.
+- `plotly`: Interactive 3D visualizations for an in-depth view of customer segments.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/repository-name.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install pandas matplotlib seaborn scikit-learn plotly
+   ```
+3. Open the Jupyter notebook and run the cells to execute the analysis.
+
+## Data
+
+The dataset includes the following key features:
+- **Age**: Age of the customer.
+- **Annual Income**: Annual income of the customer (in thousands of dollars).
+- **Spending Score**: A score assigned by the mall, reflecting customer spending behavior.
+
+## Clustering Process
+
+1. **Data Preparation**: Clean and preprocess the data for analysis.
+2. **Feature Selection**: Use key demographic and spending features for clustering.
+3. **K-Means Clustering**: Apply the K-Means algorithm with different cluster numbers to identify optimal segments.
+4. **Evaluation**: Use silhouette scores to determine the best number of clusters.
+5. **Visualization**: Use 2D and 3D plots to visualize the clusters and analyze customer segments.
